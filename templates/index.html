@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocBooker</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div>
+        <p class="eyebrow">Classroom simulation</p>
+        <h1>DocBooker</h1>
+        <p class="sub">Northshore Demo Hospital · fictional scheduling only</p>
+      </div>
+      <div class="header-actions">
+        <button type="button" id="help" class="ghost">Help</button>
+        <button type="button" id="restart" class="ghost">Restart</button>
+      </div>
+    </header>
+    <p class="notice" role="note">
+      Demo only. DocBooker books fictional appointments for a class exercise.
+      Do not enter real personal, medical, or payment information.
+      This is not a hospital, not medical advice, and not a HIPAA system.
+    </p>
+    <ol id="log" class="log" aria-live="polite"></ol>
+    <div id="replies" class="replies"></div>
+    <form id="composer">
+      <label class="sr" for="message">Message</label>
+      <input id="message" name="message" maxlength="500" autocomplete="off" placeholder="Type a message">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="static/js/chat.js"></script>
+</body>
+</html>
